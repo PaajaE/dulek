@@ -996,3 +996,9 @@ section {
     height: 100%;
   }
 }
+
+@media only screen and (orientation: landscape) and (min-width: 1200px) {
+  .section-7-content .image-container {
+    width: 50%;
+  }
+}
