@@ -25,14 +25,14 @@
     <meta name="robots" content="index, follow" />
     <meta name="author" content="Dipozitiv Studio" />
 
-    <!--Facebook-->
+    <!--TODO add Facebook image-->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.dulek.cz/" />
     <meta property="og:title" content="" />
     <meta property="og:description" content="" />
     <meta property="og:image" content="" />
 
-    <!--Twitter-->
+    <!--TODO add Twitter image-->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://www.dulek.cz/" />
     <meta property="twitter:title" content="" />
@@ -179,10 +179,31 @@
         <div class="reference-title">
           <h2>Reference</h2>
         </div>
-        <div class="reference-container">
+        <div id="reference0" class="reference-container">
+          <div class="arrows-div">
+            <img
+              id="arrow_reference5"
+              class="arrow arrow-left"
+              src="./assets/images/Icon ionic-ios-arrow-back.svg"
+              alt="Předchozí reference klienta o vedení účetnictví."
+              title="Předchozí klient a jeho zkušenost s vedením účetnictví firmou DULEK."
+              onClick="nextReference(this.id, true)"
+            />
+            <img
+              id="arrow_reference1"
+              class="arrow arrow-right"
+              src="./assets/images/Icon ionic-ios-arrow-back.svg"
+              alt="Další reference klienta o vedení účetnictví."
+              title="Další klient a jeho zkušenost s vedením účetnictví firmou DULEK."
+              onClick="nextReference(this.id, true)"
+            />
+          </div>
           <div class="image-container">
-            <!-- TODO add slider and alt, titles -->
-            <img src="./assets/images/Group 6.png" alt="" title="" />
+            <img
+              src="./assets/images/Group 6.png"
+              alt="Účetní Lenka Kyselková spravuje účetnictví pro Graphic Standard s.r.o., Martin Göbl."
+              title="Graphic Standard s.r.o., Martin Göbl využívá účetní služby v Praze od účetní firmy DULEK."
+            />
             <img
               src="./assets/images/quote_right.png"
               class="img-top-right"
@@ -197,12 +218,416 @@
             />
           </div>
           <div class="section-text">
-            <p>
-              Lenka nám vede účetnictví 3 roky a za tu dobu jsme společně
-              nastavili mnoho vylepšení v rámci zrychlení správy a předávky
-              účetnictví, které nerad eviduji. Vždy je s ní rozumná domluva.
+            <div class="arrows-container">
+              <div class="arrows-mobile-div">
+                <div
+                  onClick="nextReference(this.id, false)"
+                  id="arrow_mobile_reference5"
+                >
+                  <img
+                    class="arrow arrow-left"
+                    src="./assets/images/Icon ionic-ios-arrow-back.svg"
+                    alt="Předchozí reference klienta o vedení účetnictví."
+                    title="Předchozí klient a jeho zkušenost s vedením účetnictví firmou DULEK."
+                  />
+                </div>
+                <div
+                  onClick="nextReference(this.id, false)"
+                  id="arrow_mobile_reference1"
+                >
+                  <img
+                    class="arrow arrow-right"
+                    src="./assets/images/Icon ionic-ios-arrow-back.svg"
+                    alt="Další reference klienta o vedení účetnictví."
+                    title="Další klient a jeho zkušenost s vedením účetnictví firmou DULEK."
+                  />
+                </div>
+              </div>
+              <p class="arrows-paragraph">
+                Lenka nám vede účetnictví 3 roky a za tu dobu jsme společně
+                nastavili mnoho vylepšení v rámci zrychlení správy a předávky
+                účetnictví, které nerad eviduji. Vždy je s ní rozumná domluva.
+              </p>
+            </div>
+            <p class="signature">Graphic Standard s.r.o.,<br />Martin Göbl</p>
+          </div>
+        </div>
+        <div id="reference1" class="reference-container hidden">
+          <div class="arrows-div">
+            <img
+              id="arrow_reference0"
+              class="arrow arrow-left"
+              src="./assets/images/Icon ionic-ios-arrow-back.svg"
+              alt="Předchozí reference klienta o vedení účetnictví."
+              title="Předchozí klient a jeho zkušenost s vedením účetnictví firmou DULEK."
+              onClick="nextReference(this.id, true)"
+            />
+            <img
+              id="arrow_reference2"
+              class="arrow arrow-right"
+              src="./assets/images/Icon ionic-ios-arrow-back.svg"
+              alt="Další reference klienta o vedení účetnictví."
+              title="Další klient a jeho zkušenost s vedením účetnictví firmou DULEK."
+              onClick="nextReference(this.id, true)"
+            />
+          </div>
+          <div class="image-container">
+            <img
+              src="./assets/images/Group 6.png"
+              alt="Účetní Lenka Kyselková spravuje účetnictví pro Jiří Sita – advokát, Mgr. Jiří Sita."
+              title="Jiří Sita – advokát, Mgr. Jiří Sita využívá účetní služby v Praze od účetní firmy DULEK."
+            />
+            <img
+              src="./assets/images/quote_right.png"
+              class="img-top-right"
+              alt="Uvozovky účtování"
+              title="Účetnictví pro firmy a živnostníky"
+            />
+            <img
+              src="./assets/images/quote_left.png"
+              class="img-bottom-left"
+              alt="Účetní uvozovky"
+              title="Účetní služby"
+            />
+          </div>
+          <div class="section-text">
+            <div class="arrows-container">
+              <div class="arrows-mobile-div">
+                <div
+                  onClick="nextReference(this.id, false)"
+                  id="arrow_mobile_reference0"
+                >
+                  <img
+                    class="arrow arrow-left"
+                    src="./assets/images/Icon ionic-ios-arrow-back.svg"
+                    alt="Předchozí reference klienta o vedení účetnictví."
+                    title="Předchozí klient a jeho zkušenost s vedením účetnictví firmou DULEK."
+                  />
+                </div>
+                <div
+                  onClick="nextReference(this.id, false)"
+                  id="arrow_mobile_reference2"
+                >
+                  <img
+                    class="arrow arrow-right"
+                    src="./assets/images/Icon ionic-ios-arrow-back.svg"
+                    alt="Další reference klienta o vedení účetnictví."
+                    title="Další klient a jeho zkušenost s vedením účetnictví firmou DULEK."
+                  />
+                </div>
+              </div>
+              <p class="arrows-paragraph">
+                S Lenkou spolupracuji už více než 9 let a její bohaté zkušenosti
+                jsou pro mě zárukou kvalitně a rychle odvedené práce. Společně
+                vyřešíme vždy jakoukoliv otázku či výzvu, která se v podnikání
+                naskytne.
+              </p>
+            </div>
+            <p class="signature">Jiří Sita – advokát,<br />Mgr. Jiří Sita</p>
+          </div>
+        </div>
+        <div id="reference2" class="reference-container hidden">
+          <div class="arrows-div">
+            <img
+              id="arrow_reference1"
+              class="arrow arrow-left"
+              src="./assets/images/Icon ionic-ios-arrow-back.svg"
+              alt="Předchozí reference klienta o vedení účetnictví."
+              title="Předchozí klient a jeho zkušenost s vedením účetnictví firmou DULEK."
+              onClick="nextReference(this.id, true)"
+            />
+            <img
+              id="arrow_reference3"
+              class="arrow arrow-right"
+              src="./assets/images/Icon ionic-ios-arrow-back.svg"
+              alt="Další reference klienta o vedení účetnictví."
+              title="Další klient a jeho zkušenost s vedením účetnictví firmou DULEK."
+              onClick="nextReference(this.id, true)"
+            />
+          </div>
+          <div class="image-container">
+            <img
+              src="./assets/images/Group 6.png"
+              alt="Účetní Lenka Kyselková spravuje účetnictví pro Salon pro Tebe s.r.o., Karolína Sirůčková."
+              title="Salon pro Tebe s.r.o., Karolína Sirůčková využívá účetní služby v Praze od účetní firmy DULEK."
+            />
+            <img
+              src="./assets/images/quote_right.png"
+              class="img-top-right"
+              alt="Uvozovky účtování"
+              title="Účetnictví pro firmy a živnostníky"
+            />
+            <img
+              src="./assets/images/quote_left.png"
+              class="img-bottom-left"
+              alt="Účetní uvozovky"
+              title="Účetní služby"
+            />
+          </div>
+          <div class="section-text">
+            <div class="arrows-container">
+              <div class="arrows-mobile-div">
+                <div
+                  onClick="nextReference(this.id, false)"
+                  id="arrow_mobile_reference1"
+                >
+                  <img
+                    class="arrow arrow-left"
+                    src="./assets/images/Icon ionic-ios-arrow-back.svg"
+                    alt="Předchozí reference klienta o vedení účetnictví."
+                    title="Předchozí klient a jeho zkušenost s vedením účetnictví firmou DULEK."
+                  />
+                </div>
+                <div
+                  onClick="nextReference(this.id, false)"
+                  id="arrow_mobile_reference3"
+                >
+                  <img
+                    class="arrow arrow-right"
+                    src="./assets/images/Icon ionic-ios-arrow-back.svg"
+                    alt="Další reference klienta o vedení účetnictví."
+                    title="Další klient a jeho zkušenost s vedením účetnictví firmou DULEK."
+                  />
+                </div>
+              </div>
+              <p class="arrows-paragraph">
+                S Lenkou spolupracujeme již čtvrtým rokem a jsme maximálně
+                spokojeni, pomohla nám se založením firmy, o nic jsme se
+                nemuseli starat, o účetnictví naší společnosti se stará precizně
+                a přitom zvládá i účetnictví našich OSVČ pracovnic.
+              </p>
+            </div>
+            <p class="signature">
+              Salon pro Tebe s.r.o.,<br />Karolína Sirůčková
             </p>
-            <p class="signature">Martin Göbl, Graphic Standard s.r.o.</p>
+          </div>
+        </div>
+        <div id="reference3" class="reference-container hidden">
+          <div class="arrows-div">
+            <img
+              id="arrow_reference2"
+              class="arrow arrow-left"
+              src="./assets/images/Icon ionic-ios-arrow-back.svg"
+              alt="Předchozí reference klienta o vedení účetnictví."
+              title="Předchozí klient a jeho zkušenost s vedením účetnictví firmou DULEK."
+              onClick="nextReference(this.id, true)"
+            />
+            <img
+              id="arrow_reference4"
+              class="arrow arrow-right"
+              src="./assets/images/Icon ionic-ios-arrow-back.svg"
+              alt="Další reference klienta o vedení účetnictví."
+              title="Další klient a jeho zkušenost s vedením účetnictví firmou DULEK."
+              onClick="nextReference(this.id, true)"
+            />
+          </div>
+          <div class="image-container">
+            <img
+              src="./assets/images/Group 6.png"
+              alt="Účetní Lenka Kyselková spravuje účetnictví pro Mazel & Partneři, advokátní kancelář, s.r.o., Mgr. Michal Mazel."
+              title="Mazel & Partneři, advokátní kancelář, s.r.o., Mgr. Michal Mazel využívá účetní služby v Praze od účetní firmy DULEK."
+            />
+            <img
+              src="./assets/images/quote_right.png"
+              class="img-top-right"
+              alt="Uvozovky účtování"
+              title="Účetnictví pro firmy a živnostníky"
+            />
+            <img
+              src="./assets/images/quote_left.png"
+              class="img-bottom-left"
+              alt="Účetní uvozovky"
+              title="Účetní služby"
+            />
+          </div>
+          <div class="section-text">
+            <div class="arrows-container">
+              <div class="arrows-mobile-div">
+                <div
+                  onClick="nextReference(this.id, false)"
+                  id="arrow_mobile_reference2"
+                >
+                  <img
+                    class="arrow arrow-left"
+                    src="./assets/images/Icon ionic-ios-arrow-back.svg"
+                    alt="Předchozí reference klienta o vedení účetnictví."
+                    title="Předchozí klient a jeho zkušenost s vedením účetnictví firmou DULEK."
+                  />
+                </div>
+                <div
+                  onClick="nextReference(this.id, false)"
+                  id="arrow_mobile_reference4"
+                >
+                  <img
+                    class="arrow arrow-right"
+                    src="./assets/images/Icon ionic-ios-arrow-back.svg"
+                    alt="Další reference klienta o vedení účetnictví."
+                    title="Další klient a jeho zkušenost s vedením účetnictví firmou DULEK."
+                  />
+                </div>
+              </div>
+              <p class="arrows-paragraph">
+                S paní Kyselkovou spolupracujeme už téměř 10 let, vede pro nás
+                několik firem, řešíme spolu mzdové účetnictví, daňovou
+                problematiku, vždy nás upozorní včas na změny v zákonech a co je
+                pro nás nejvíc, je pro ní samozřejmostí daňová úspora našich
+                firem a přináší nové nápady. Jsme velmi spokojeni.
+              </p>
+            </div>
+            <p class="signature">
+              Mazel & Partneři, advokátní kancelář, s.r.o.,<br />Mgr. Michal
+              Mazel
+            </p>
+          </div>
+        </div>
+        <div id="reference4" class="reference-container hidden">
+          <div class="arrows-div">
+            <img
+              id="arrow_reference3"
+              class="arrow arrow-left"
+              src="./assets/images/Icon ionic-ios-arrow-back.svg"
+              alt="Předchozí reference klienta o vedení účetnictví."
+              title="Předchozí klient a jeho zkušenost s vedením účetnictví firmou DULEK."
+              onClick="nextReference(this.id, true)"
+            />
+            <img
+              id="arrow_reference5"
+              class="arrow arrow-right"
+              src="./assets/images/Icon ionic-ios-arrow-back.svg"
+              alt="Další reference klienta o vedení účetnictví."
+              title="Další klient a jeho zkušenost s vedením účetnictví firmou DULEK."
+              onClick="nextReference(this.id, true)"
+            />
+          </div>
+          <div class="image-container">
+            <img
+              src="./assets/images/Group 6.png"
+              alt="Účetní Lenka Kyselková spravuje účetnictví pro AMMT CZ, s.r.o., Mgr. Dalibor Žaloudek."
+              title="AMMT CZ, s.r.o., Mgr. Dalibor Žaloudek využívá účetní služby v Praze od účetní firmy DULEK."
+            />
+            <img
+              src="./assets/images/quote_right.png"
+              class="img-top-right"
+              alt="Uvozovky účtování"
+              title="Účetnictví pro firmy a živnostníky"
+            />
+            <img
+              src="./assets/images/quote_left.png"
+              class="img-bottom-left"
+              alt="Účetní uvozovky"
+              title="Účetní služby"
+            />
+          </div>
+          <div class="section-text">
+            <div class="arrows-container">
+              <div class="arrows-mobile-div">
+                <div
+                  onClick="nextReference(this.id, false)"
+                  id="arrow_mobile_reference3"
+                >
+                  <img
+                    class="arrow arrow-left"
+                    src="./assets/images/Icon ionic-ios-arrow-back.svg"
+                    alt="Předchozí reference klienta o vedení účetnictví."
+                    title="Předchozí klient a jeho zkušenost s vedením účetnictví firmou DULEK."
+                  />
+                </div>
+                <div
+                  onClick="nextReference(this.id, false)"
+                  id="arrow_mobile_reference5"
+                >
+                  <img
+                    class="arrow arrow-right"
+                    src="./assets/images/Icon ionic-ios-arrow-back.svg"
+                    alt="Další reference klienta o vedení účetnictví."
+                    title="Další klient a jeho zkušenost s vedením účetnictví firmou DULEK."
+                  />
+                </div>
+              </div>
+              <p class="arrows-paragraph">
+                Spolupráce s paní Kyselkovou probíhá 2 roky, řešíme hlavně
+                oblast mezd, jsme personální agentura a vše probíhá k plné
+                spokojenosti, vždy umí vyjít vstříc s řešením veškerých problémů
+                a komplikacemi v účetnictví a mzdách.
+              </p>
+            </div>
+            <p class="signature">AMMT CZ, s.r.o.,<br />Mgr. Dalibor Žaloudek</p>
+          </div>
+        </div>
+        <div id="reference5" class="reference-container hidden">
+          <div class="arrows-div">
+            <img
+              id="arrow_reference4"
+              class="arrow arrow-left"
+              src="./assets/images/Icon ionic-ios-arrow-back.svg"
+              alt="Předchozí reference klienta o vedení účetnictví."
+              title="Předchozí klient a jeho zkušenost s vedením účetnictví firmou DULEK."
+              onClick="nextReference(this.id, true)"
+            />
+            <img
+              id="arrow_reference0"
+              class="arrow arrow-right"
+              src="./assets/images/Icon ionic-ios-arrow-back.svg"
+              alt="Další reference klienta o vedení účetnictví."
+              title="Další klient a jeho zkušenost s vedením účetnictví firmou DULEK."
+              onClick="nextReference(this.id, true)"
+            />
+          </div>
+          <div class="image-container">
+            <img
+              src="./assets/images/Group 6.png"
+              alt="Účetní Lenka Kyselková spravuje účetnictví pro ELEKTROSERVIS Mulač s.r.o., Tomáš Mulač."
+              title="ELEKTROSERVIS Mulač s.r.o., Tomáš Mulač využívá účetní služby v Praze od účetní firmy DULEK."
+            />
+            <img
+              src="./assets/images/quote_right.png"
+              class="img-top-right"
+              alt="Uvozovky účtování"
+              title="Účetnictví pro firmy a živnostníky"
+            />
+            <img
+              src="./assets/images/quote_left.png"
+              class="img-bottom-left"
+              alt="Účetní uvozovky"
+              title="Účetní služby"
+            />
+          </div>
+          <div class="section-text">
+            <div class="arrows-container">
+              <div class="arrows-mobile-div">
+                <div
+                  onClick="nextReference(this.id, false)"
+                  id="arrow_mobile_reference4"
+                >
+                  <img
+                    class="arrow arrow-left"
+                    src="./assets/images/Icon ionic-ios-arrow-back.svg"
+                    alt="Předchozí reference klienta o vedení účetnictví."
+                    title="Předchozí klient a jeho zkušenost s vedením účetnictví firmou DULEK."
+                  />
+                </div>
+                <div
+                  onClick="nextReference(this.id, false)"
+                  id="arrow_mobile_reference0"
+                >
+                  <img
+                    class="arrow arrow-right"
+                    src="./assets/images/Icon ionic-ios-arrow-back.svg"
+                    alt="Další reference klienta o vedení účetnictví."
+                    title="Další klient a jeho zkušenost s vedením účetnictví firmou DULEK."
+                  />
+                </div>
+              </div>
+              <p class="arrows-paragraph">
+                S paní Kyselkovou spolupracuji již více než 15 let jsme velmi
+                spokojeni se službami. Má velký přehled ve svém oboru a vždy
+                ráda a rychle poradí se všemi problémy, na které v podnikání
+                narazím.
+              </p>
+            </div>
+            <p class="signature">
+              ELEKTROSERVIS Mulač s.r.o.,<br />Tomáš Mulač
+            </p>
           </div>
         </div>
       </section>
@@ -335,48 +760,80 @@
       </section>
     </main>
     <footer></footer>
-    <div class="menu-container">
+    <div id="navbar" class="menu-container">
       <div class="title-container">
         <h1>
           <a
             href="/#home"
+            onClick="hideMenu()"
             title="Kompletní vedení účetnictví, daní, mezd a skladového hospodářství v Praze a okolí"
             >Dulek</a
           >
         </h1>
       </div>
-      <nav>
-        <ul>
-          <li>
+      <nav id="navbarNav">
+        <div class="menu-wrapper">
+          <ul>
+            <li>
+              <a
+                href="#services"
+                onClick="hideMenu()"
+                title="Účetní služby v Praze a okolí pro živnostníky i firmy. Od kompletního vedení účetnictví až po jednotlivé potřeby klienta jako jsou mzdy, daně, sklady nebo jen konzultace a jiné."
+                >Služby</a
+              >
+            </li>
+            <li>
+              <a
+                href="#reference"
+                onClick="hideMenu()"
+                title="Účetnictví vedu mnoha klientům, přečtěte si jejich reference, jako na jejich účetní v Praze pro jejich potřeby."
+                >Reference</a
+              >
+            </li>
+            <li>
+              <a
+                href="#questions"
+                onClick="hideMenu()"
+                title="Máte otázky ohledně vedení účetnictví u vás na firmě? Nebo jak začít spolupráci? Chcete, abych vám vedla vaše účetnictví?"
+                >Otázky</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contact"
+                onClick="hideMenu()"
+                title="Kontaktujte mě a domluvíme se přesně na vašich potřebách pro správu vašeho účetnictví."
+                >Kontakt</a
+              >
+            </li>
+          </ul>
+          <div class="menu-contacts">
             <a
-              href="#services"
-              title="Účetní služby v Praze a okolí pro živnostníky i firmy. Od kompletního vedení účetnictví až po jednotlivé potřeby klienta jako jsou mzdy, daně, sklady nebo jen konzultace a jiné."
-              >Služby</a
+              href="tel:+420608261755"
+              title="Zavolejte mi v případě zájmu nebo s dotazy ohledně vašeho účetnictví."
+              >+ 420 608 261 755</a
             >
-          </li>
-          <li>
+
             <a
-              href="#reference"
-              title="Účetnictví vedu mnoha klientům, přečtěte si jejich reference, jako na jejich účetní v Praze pro jejich potřeby."
-              >Reference</a
+              href="mailto:lenka.kyselkova@seznam.cz"
+              title="Pošlete mi e-mail s dotazy nebo vašimi požadavky na vedení a správu účetnictví pro vaší firmu."
+              >lenka.kyselkova@seznam.cz</a
             >
-          </li>
-          <li>
-            <a
-              href="#questions"
-              title="Máte otázky ohledně vedení účetnictví u vás na firmě? Nebo jak začít spolupráci? Chcete, abych vám vedla vaše účetnictví?"
-              >Otázky</a
-            >
-          </li>
-          <li>
-            <a
-              href="#contact"
-              title="Kontaktujte mě a domluvíme se přesně na vašich potřebách pro správu vašeho účetnictví."
-              >Kontakt</a
-            >
-          </li>
-        </ul>
+          </div>
+        </div>
       </nav>
+      <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+        <img
+          id="menuOpenIcon"
+          src="./assets/images/hamburger.svg"
+          alt="Otevřít menu"
+        />
+        <img
+          id="menuCloseIcon"
+          src="./assets/images/krizek.svg"
+          alt="Zavřít menu"
+        />
+      </a>
     </div>
     <script src="script.js"></script>
   </body>
