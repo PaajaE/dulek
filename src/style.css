@@ -485,7 +485,7 @@ section {
 }
 
 .feature img {
-  width: 50%;
+  width: 40%;
   padding-bottom: 2rem;
 }
 
@@ -555,7 +555,7 @@ section {
 /* section - 4 */
 .section-4 {
   height: unset;
-  background-color: var(--white);
+  background-color: var(--background-grey);
   padding: calc(2 * var(--padding-mobile-r-l)) var(--padding-mobile-r-l);
 }
 
@@ -675,14 +675,14 @@ section {
     position: absolute;
     top: -5%;
     right: 0;
-    height: 25vh;
+    height: 15vh;
   }
 
   .reference-container .image-container .img-bottom-left {
     position: absolute;
     bottom: -5%;
     left: 0;
-    height: 25vh;
+    height: 15.5vh;
   }
 
   .reference-container .section-text {
@@ -834,6 +834,14 @@ section {
   height: 100%;
 }
 
+.section-6-image img {
+  width: 66.66vw;
+  height: 66.66vw;
+  border-radius: 999px;
+  object-fit: cover;
+  object-position: right;
+}
+
 @media only screen and (orientation: portrait) and (min-width: 768px) and (max-width: 1200px) {
   .section-6-container .section-text-content {
     height: 75vh;
@@ -876,6 +884,14 @@ section {
     justify-content: center;
     align-items: center;
   }
+
+  .section-6-image img {
+    width: calc(0.4166 * 100vw);
+    height: calc(0.4166 * 100vw);
+    border-radius: 999px;
+    object-fit: cover;
+    object-position: right;
+  }
 }
 
 /* section - 7 */
@@ -904,13 +920,11 @@ section {
   width: 70%;
   align-self: flex-end;
   padding: 0 2rem;
-  background-color: #143a76;
   height: calc(100vh * 250 / 1080);
 }
 
 .section-7-content .image-container img {
   max-height: unset;
-  object-fit: cover;
 }
 
 .section-7-content .texts-container {
@@ -951,8 +965,6 @@ section {
     display: flex;
     width: 60%;
     align-self: flex-end;
-    padding: 0 2rem;
-    background-color: #143a76;
     height: calc(100vh * 250 / 1080);
   }
 }
@@ -974,8 +986,6 @@ section {
     display: flex;
     width: 70%;
     align-self: flex-end;
-    padding: 0 2rem;
-    background-color: #143a76;
     height: calc(100vh * 250 / 1080);
   }
   .section-7-content .texts-container > div:first-of-type {
