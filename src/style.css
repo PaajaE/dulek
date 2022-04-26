@@ -912,7 +912,7 @@ section {
 /* section - 7 */
 .section-7 {
   background-color: white;
-  height: unset;
+  height: webkit-fill-available;
 }
 
 .section-7-container {
