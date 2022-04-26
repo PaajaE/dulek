@@ -912,7 +912,7 @@ section {
 /* section - 7 */
 .section-7 {
   background-color: white;
-  height: webkit-fill-available;
+  height: unset;
 }
 
 .section-7-container {
@@ -987,6 +987,7 @@ section {
 
 @media only screen and (orientation: landscape) and (min-width: 768px) {
   .section-7 {
+    height: 100vh;
     max-height: 100vh;
   }
   .section-7-container {
