@@ -29,6 +29,7 @@
   --padding-r-l-half: 4.357rem;
   --padding-mobile-r-l: 4rem;
   --padding-mobile-r-l-half: 2rem;
+  --app-height: 100%;
 }
 
 html {
@@ -50,7 +51,7 @@ body {
 }
 
 main {
-  height: 100vh;
+  height: var(--app-height);
 }
 
 h2,
@@ -119,7 +120,7 @@ h3 {
   padding: 1rem var(--padding-mobile-r-l);
 }
 
-.menu-container .title-container h1 {
+.menu-container .title-container h2 {
   font-size: var(--fs-title);
   text-transform: uppercase;
 }
@@ -130,7 +131,7 @@ h3 {
   position: absolute;
   top: 10rem;
   width: 100vw;
-  height: calc(100vh - 10rem);
+  height: calc(var(--app-height) - 10rem);
   background-color: white;
 }
 
@@ -178,7 +179,7 @@ h3 {
 
 @media only screen and (orientation: portrait) and (min-width: 768px) and (max-width: 1200px) {
   .menu-container {
-    height: calc(0.111 * 100vh);
+    height: calc(0.111 * var(--app-height));
   }
   .menu-container .title-container h1 {
     font-size: var(--fs-title-tablet);
@@ -223,7 +224,7 @@ h3 {
 
 @media only screen and (orientation: landscape) and (min-width: 768px) {
   .menu-container {
-    height: calc(0.111 * 100vh);
+    height: calc(0.111 * var(--app-height));
   }
 
   .menu-container a.icon {
@@ -270,7 +271,7 @@ a {
 }
 
 section {
-  height: 100vh;
+  height: var(--app-height);
 }
 
 .section-hero {
@@ -470,7 +471,7 @@ section {
 /* section - 2 */
 .section-2 {
   background-color: var(--white);
-  height: 90vh;
+  height: calc(90 * var(--app-height) / 100);
   padding: var(--padding-mobile-r-l) var(--padding-mobile-r-l-half);
 }
 
@@ -495,6 +496,7 @@ section {
 .feature img {
   width: 40%;
   padding-bottom: 2rem;
+  object-fit: contain;
 }
 
 .feature h3 {
@@ -505,7 +507,7 @@ section {
 @media only screen and (orientation: landscape) and (min-width: 768px) {
   .section-2 {
     background-color: var(--white);
-    height: 90vh;
+    height: calc(90 * var(--app-height) / 100);
     padding: var(--padding-r-l);
   }
 
@@ -590,14 +592,14 @@ section {
   position: absolute;
   top: 5%;
   right: 0;
-  height: 15vh;
+  height: calc(15 * var(--app-height) / 100);
 }
 
 .reference-container .image-container .img-bottom-left {
   position: absolute;
   bottom: 5%;
   left: 0;
-  height: 15vh;
+  height: calc(15 * var(--app-height) / 100);
 }
 
 .reference-container .section-text {
@@ -668,7 +670,7 @@ section {
 
   .reference-container {
     width: 100%;
-    height: 70vh;
+    height: calc(70 * var(--app-height) / 100);
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -685,14 +687,14 @@ section {
     position: absolute;
     top: -5%;
     right: 0;
-    height: 15vh;
+    height: calc(15 * var(--app-height) / 100);
   }
 
   .reference-container .image-container .img-bottom-left {
     position: absolute;
     bottom: -5%;
     left: 0;
-    height: 15.5vh;
+    height: calc(15.5 * var(--app-height) / 100);
   }
 
   .reference-container .section-text {
@@ -734,7 +736,7 @@ section {
   display: flex;
   flex-direction: column;
   width: 100%;
-  min-height: 33vh;
+  min-height: calc(33 * var(--app-height) / 100);
   justify-content: space-evenly;
   align-items: center;
   padding: 2rem 0;
@@ -775,7 +777,7 @@ section {
     flex-direction: column;
     width: 33%;
     min-height: unset;
-    height: 25vh;
+    height: calc(25 * var(--app-height) / 100);
     justify-content: space-between;
     align-items: center;
     padding: 2rem 0;
@@ -809,7 +811,6 @@ section {
 
 .section-6-container .section-text-content {
   width: 100%;
-  height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -852,19 +853,19 @@ section {
   object-fit: cover;
   -o-object-position: right;
   object-position: right;
-  max-height: 100vh;
+  max-height: var(--app-height);
 }
 
 @media only screen and (orientation: portrait) and (min-width: 768px) and (max-width: 1200px) {
   .section-6-container .section-text-content {
-    height: 75vh;
+    height: calc(75 * var(--app-height) / 100);
   }
 }
 
 @media only screen and (orientation: landscape) and (min-width: 768px) {
   .section-6 {
     background-color: white;
-    height: 90vh;
+    height: calc(90 * var(--app-height) / 100);
     padding: var(--padding-r-l);
     display: flex;
     align-items: center;
@@ -877,6 +878,7 @@ section {
 
   .section-6-container .section-text-content {
     width: 50%;
+    height: calc(60 * var(--app-height) / 100);
     max-height: 100%;
     padding-bottom: 0;
   }
@@ -936,11 +938,13 @@ section {
   width: 70%;
   align-self: flex-end;
   padding: 0 2rem;
-  height: calc(100vh * 250 / 1080);
+  height: calc(var(--app-height) * 250 / 1080);
 }
 
 .section-7-content .image-container img {
   max-height: unset;
+  object-fit: contain;
+  object-position: right;
 }
 
 .section-7-content .texts-container {
@@ -968,12 +972,12 @@ section {
 
 .section-7-map {
   width: 100%;
-  height: 100vh;
+  height: var(--app-height);
 }
 
 .section-7-map iframe {
   width: 100%;
-  height: 100vh;
+  height: var(--app-height);
 }
 
 @media only screen and (orientation: portrait) and (min-width: 768px) and (max-width: 1200px) {
@@ -981,14 +985,14 @@ section {
     display: flex;
     width: 60%;
     align-self: flex-end;
-    height: calc(100vh * 250 / 1080);
+    height: calc(var(--app-height) * 250 / 1080);
   }
 }
 
 @media only screen and (orientation: landscape) and (min-width: 768px) {
   .section-7 {
-    height: 100vh;
-    max-height: 100vh;
+    height: var(--app-height);
+    max-height: var(--app-height);
   }
   .section-7-container {
     flex-direction: row;
@@ -1003,7 +1007,7 @@ section {
     display: flex;
     width: 70%;
     align-self: flex-end;
-    height: calc(100vh * 250 / 1080);
+    height: calc(var(--app-height) * 250 / 1080);
   }
   .section-7-content .texts-container > div:first-of-type {
     margin: 2rem 0;
