@@ -22,10 +22,10 @@ function nextReference(arrowId, isDesktop) {
 let prevScrollpos = 0;
 window.onscroll = function () {
   const currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
+  if (prevScrollpos > currentScrollPos || currentScrollPos <= 0) {
     document.getElementById("navbar").style.top = "0";
   } else {
-    document.getElementById("navbar").style.top = "-20%";
+    document.getElementById("navbar").style.top = "-50%";
   }
   prevScrollpos = currentScrollPos;
 };
