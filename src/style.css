@@ -195,7 +195,7 @@ h3 {
 
   .menu-container nav {
     position: unset;
-    display: block;
+    display: block !important;
     height: 100%;
     top: unset;
   }
@@ -237,7 +237,7 @@ h3 {
 
   .menu-container nav {
     position: unset;
-    display: block;
+    display: block !important;
     height: 100%;
     top: unset;
   }
