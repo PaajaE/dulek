@@ -284,6 +284,7 @@ section {
   height: 100%;
   width: 100%;
   z-index: -1;
+  background-color: var(--main-color);
 }
 
 .hero-image img {
@@ -293,6 +294,7 @@ section {
   object-fit: cover;
   -o-object-position: 75%;
   object-position: 75%;
+  opacity: 0;
 }
 
 .hero-text {
@@ -361,8 +363,8 @@ section {
 }
 
 .btn {
-  background-color: var(--main-color);
-  color: white;
+  background-color: white;
+  color: var(--main-color);
   padding: 1rem 4rem;
   font-size: var(--fs-text);
   font-weight: 400;
@@ -385,7 +387,7 @@ section {
 
 .inverted {
   background-color: white;
-  color: var(--main-text-color);
+  color: var(--main-color);
 }
 
 @media only screen and (orientation: landscape) and (min-width: 768px) {
